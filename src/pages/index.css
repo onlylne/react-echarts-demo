@@ -1,0 +1,131 @@
+.mgt_10 {
+  margin-top: 10px;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  min-width: 1200px;
+  min-height: 100vh;
+  background: url("../assets/bg.jpeg") no-repeat;
+  background-size: 100% 100%;
+  user-select: none;
+  overflow: hidden;
+}
+
+.header {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  border-bottom: 2px solid rgb(26, 124, 236);
+}
+
+.header .left:before {
+  width: 20%;
+  height: 0;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-color: transparent transparent #1752aa8c;
+  border-style: none solid solid;
+  border-width: 0 50px 50px 0;
+  content: "";
+  box-sizing: content-box;
+}
+
+.header .center:before {
+  width: calc(60% - 99px);
+  display: block;
+  height: 0;
+  position: absolute;
+  left: calc(20% - 1px);
+  top: 0;
+  border-color: transparent transparent #002243d3;
+  border-style: none solid solid;
+  border-width: 0 50px 50px;
+  transform: rotate(180deg);
+  content: "";
+  box-sizing: content-box;
+}
+
+.header .right:before {
+  width: 20%;
+  height: 0;
+  display: block;
+  position: absolute;
+  left: calc(80% - 50px);
+  top: 0;
+  border-color: transparent transparent #1752aa8c;
+  border-style: none solid solid;
+  border-width: 0 0px 50px 50px;
+  content: "";
+  box-sizing: content-box;
+}
+
+.header .text {
+  position: relative;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  line-height: 52px;
+  font-size: 20px;
+  /* letter-spacing: 6px; */
+  font-weight: 600;
+}
+
+.header .date {
+  position: absolute;
+  bottom: 4px;
+  right: 10px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.main {
+  position: relative;
+  min-height: calc(100vh - 52px);
+  width: 100%;
+  padding: 10px 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.chartsFlex {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.lineChart, .barChart, .pieChart {
+  flex: 1;
+  /* min-width: 400px; */
+  height: 300px;
+  position: relative;
+  background: linear-gradient(to left, #009DFF, #009DFF) left top no-repeat, linear-gradient(to bottom, #009DFF, #009DFF) left top no-repeat, linear-gradient(to left, #009DFF, #009DFF) right top no-repeat, linear-gradient(to bottom, #009DFF, #009DFF) right top no-repeat, linear-gradient(to left, #009DFF, #009DFF) left bottom no-repeat, linear-gradient(to bottom, #009DFF, #009DFF) left bottom no-repeat, linear-gradient(to left, #009DFF, #009DFF) right bottom no-repeat, linear-gradient(to left, #009DFF, #009DFF) right bottom no-repeat;
+  background-size: 1px 20px, 20px 1px, 1px 20px, 20px 1px;
+  border: 1px solid #006ECE;
+}
+
+.barChart {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.hoursMinChart {
+  position: relative;
+  flex: 1;
+  height: 230px;
+  background: linear-gradient(to left, #009DFF, #009DFF) left top no-repeat, linear-gradient(to bottom, #009DFF, #009DFF) left top no-repeat, linear-gradient(to left, #009DFF, #009DFF) right top no-repeat, linear-gradient(to bottom, #009DFF, #009DFF) right top no-repeat, linear-gradient(to left, #009DFF, #009DFF) left bottom no-repeat, linear-gradient(to bottom, #009DFF, #009DFF) left bottom no-repeat, linear-gradient(to left, #009DFF, #009DFF) right bottom no-repeat, linear-gradient(to left, #009DFF, #009DFF) right bottom no-repeat;
+  background-size: 1px 20px, 20px 1px, 1px 20px, 20px 1px;
+  border: 1px solid #006ECE;
+}
+
+.mapChart {
+  position: relative;
+  flex: 1;
+  height: 600px;
+  background: linear-gradient(to left, #009DFF, #009DFF) left top no-repeat, linear-gradient(to bottom, #009DFF, #009DFF) left top no-repeat, linear-gradient(to left, #009DFF, #009DFF) right top no-repeat, linear-gradient(to bottom, #009DFF, #009DFF) right top no-repeat, linear-gradient(to left, #009DFF, #009DFF) left bottom no-repeat, linear-gradient(to bottom, #009DFF, #009DFF) left bottom no-repeat, linear-gradient(to left, #009DFF, #009DFF) right bottom no-repeat, linear-gradient(to left, #009DFF, #009DFF) right bottom no-repeat;
+  background-size: 1px 20px, 20px 1px, 1px 20px, 20px 1px;
+  border: 1px solid #006ECE;
+}

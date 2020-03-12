@@ -1,0 +1,49 @@
+.containerStyle {
+  position: absolute;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  background-color: rgba(0,0,0,.4);
+  color: #fff;
+}
+
+.close {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  line-height: 18px;
+  text-align: center;
+  background-color: rgba(247, 109, 109, 0.5);
+  font-size: 18px;
+  transform: rotate(45deg);
+  top: -10px;
+  right: -10px;
+  border: 1px solid #eee;
+  border-radius: 11px;
+  cursor: pointer;
+}
+.close:hover {
+  background-color: rgba(247, 109, 109, 0.9);
+}
+
+.header {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-bottom: 1px solid #bbb;
+  font-size: 16px;
+}
+
+.salesData {
+  padding: 10px;
+}
+
+.total {
+  font-size: 14px;
+}
+
+.subitem {
+  padding-left: 2em;
+  margin-top: 6px;
+  line-height: 16px;
+}
